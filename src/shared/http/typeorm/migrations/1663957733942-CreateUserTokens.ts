@@ -14,7 +14,7 @@ export class CreateUserTokens1663957733942 implements MigrationInterface {
             default: 'uuid_generate_v4()',
           },
           {
-            name: 'id',
+            name: 'token',
             type: 'uuid',
             generationStrategy: 'uuid',
             default: 'uuid_generate_v4()',
@@ -25,12 +25,12 @@ export class CreateUserTokens1663957733942 implements MigrationInterface {
           },
           {
             name: 'created_at',
-            type: 'timestamp with time zone',
+            type: 'timestamp',
             default: 'now()',
           },
           {
             name: 'updated_at',
-            type: 'timestamp with time zone',
+            type: 'timestamp',
             default: 'now()',
           },
         ],
